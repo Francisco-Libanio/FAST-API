@@ -12,10 +12,10 @@ instance/*
 __pycache__/
 *.py[cod]
 *$py.class
-
+__pycache__
 # C extensions
 *.so
-
+.idea/
 # Distribution / packaging
 .Python
 build/
@@ -103,12 +103,12 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
+poetry
+  # Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+   #This is especially recommended for binary packages to ensure reproducibility, and is more
+   #commonly ignored for libraries.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
+poetry.lock
 
 # pdm
 #   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
@@ -403,3 +403,28 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,jupyternotebooks,visualstudiocode,flask
+# Created by https://www.toptal.com/developers/gitignore/api/venv,dotenv,virtualenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=venv,dotenv,virtualenv
+
+### dotenv ###
+.env
+
+### venv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+pip-selfcheck.json
+
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+
+# End of https://www.toptal.com/developers/gitignore/api/venv,dotenv,virtualenv
